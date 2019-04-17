@@ -24,7 +24,7 @@ Go to groups_workspace and run `gclient sync`.
 
 ```
 git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
-cd groups_workspace
+cd liblunabulletml
 PATH=$PATH:../depot_tools gclient sync
 ```
 
