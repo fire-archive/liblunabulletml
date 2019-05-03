@@ -33,7 +33,7 @@ target_include_directories(libluna.bulletml
                             "thirdparty/godot-cpp/godot_headers"
                             "thirdparty/godot-cpp/include/core")
 
-if(OSX)
+if(UNIX AND APPLE)
 target_link_libraries(libluna.bulletml 
 ${CMAKE_CURRENT_SOURCE_DIR}/thirdparty/godot-cpp/bin/libgodot-cpp.osx.release.64.a
 "-framework Cocoa")
@@ -43,6 +43,6 @@ ${CMAKE_CURRENT_SOURCE_DIR}/thirdparty/godot-cpp/bin/libgodot-cpp.windows.releas
 elseif(UNIX)
 target_link_libraries(libluna.bulletml
 ${CMAKE_CURRENT_SOURCE_DIR}/thirdparty/godot-cpp/bin/libgodot-cpp.linux.release.64.a)
-endif(OSX)
+endif(UNIX AND APPLE)
 
 file(COPY sample DESTINATION .)
