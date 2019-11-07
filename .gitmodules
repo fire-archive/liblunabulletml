@@ -1,0 +1,3 @@
+[submodule "src/thirdparty/libbulletml"]
+	path = src/thirdparty/libbulletml
+	url = https://github.com/chibifire/libbulletml
